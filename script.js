@@ -24,48 +24,17 @@ function somar(a, b) {
     let soma = a + b;
     resultado.innerHTML = soma;
 }
-let selectedLanguage = document.querySelector("#idioma");
-selectedLanguage.addEventListener("change", function(){
-    if(this.value == "br"){
-        btSoma.value = "Soma";
-        
-        
-    }
-    else if(this.value == "en"){
-        btSoma.value = "Sum";
-    }
-    else if(this.value == "es"){
-        btSoma.value = "Suma";
-    }
-});
 
-selectedLanguage = document.querySelector("#idioma");
-selectedLanguage.addEventListener("change", function(){
-    if(this.value == "br"){
-        btSubtracao.value = "Subtração";
-        
-    }
-    else if(this.value == "en"){
-        btSubtracao.value = "Subtraction";
-    }
-    else if(this.value == "es"){
-        btSubtracao.value = "Subtracion";
-    }
-});
-
-selectedLanguage = document.querySelector("#idioma");
-selectedLanguage.addEventListener("change", function(){
-    if(this.value == "br"){
-        btDivisão.value = "Soma";
-        
-        
-    }
-    else if(this.value == "en"){
-        btDivisão.value = "Sum";
-    }
-    else if(this.value == "es"){
-        btDivisão.value = "Suma";
-    }
-});
-
+function divisao(a, b){
+    let div = a / b;
+    resultado.innerHTML = div;
+}
+function multiplicacao(a, b){
+    let multiplicacao = a * b;
+    resultado.innerHTML = multiplicacao;
+}
+function subtracao(a, b){
+    let subtracao = a - b;
+    resultado.innerHTML = subtracao;
+}
 
